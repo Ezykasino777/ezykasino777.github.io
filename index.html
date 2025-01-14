@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="google5143c37a4e13843f.html">
+    <meta name="description" content="Selamat datang di Ezykasino! Mainkan game demo kasino online terbaik tanpa risiko. Temukan keseruan bermain dan rasakan sensasi hiburan tanpa batas.">
+    <meta name="keywords" content="Ezykasino, game demo, game online, main gratis, game tanpa risiko, hiburan online, Pragmatic, Pgsoft, CQ9">
+    <meta name="author" content="Ezykasino">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Selamat Datang di Website Game Demo Ezykasino">
+    <meta property="og:description" content="Mainkan game demo kasino online terbaik di Ezykasino. Gratis dan tanpa risiko! Klik untuk mencoba sekarang.">
+    <meta property="og:image" content="https://i.ibb.co/txDbGtG/Untitled-1.png">
+    <meta property="og:url" content="https://adelia0915.github.io/Demogame">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/0D3x5RB/download.png" type="image/png">
+    
+    <title>Selamat Datang di Website Game Demo Ezykasino</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('image/BG.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #fff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .box {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 159px; /* Updated to match image width */
+            margin: 0 auto; /* Center the box */
+        }
+        .box img {
+            width: 159px;  /* Updated width */
+            height: 180px; /* Updated height */
+            object-fit: cover;
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        .box a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 0; /* Adjusted padding to match image height */
+            font-size: 0.9em;
+            display: block;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+            background-color: #48de23;
+            width: 159px;  /* Match button width with image */
+            margin: 0 auto;  /* Center the button */
+        }
+        .box a:hover {
+            background-color: #65a045;
+        }
+        .box .btn-demo {
+            background-color: #2196F3;
+        }
+        .box .btn-demo:hover {
+            background-color: #1e88e5;
+        }
+        /* Fullscreen iframe styles */
+        #gameFrame {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            border: none;
+        }
+        #closeBtn {
+            display: none;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #f44336;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            z-index: 1100;
+        }
+        #closeBtn:hover {
+            background: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="image" src="image/ezykasino.png" alt="Logo" style="float:left; width: 150px; height: auto; margin-bottom: 10px;"> 
+        <h1>Selamat Datang Member Setia Ezykasino</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://i.ibb.co/rd3yZP0/MAHJONG1.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/mahjongezykasino7772')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/MNPqwz6/Mahjong-ways-2.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/mahjongways2ezykasino777')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/x5dQvYx/WILD-BOUNTY-SHOWDOWN.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/ezykasino777demopg')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/3pyfQWs/ICE-SCAPE-PG.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/Be9peZnR')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/FWPTnWz/WILDBANDITO.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/42629Rh')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/v3Fw0jQ/GAMES-STONE.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/421c7DG')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/cvR15Lq/NEKO.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/ke9dnewr')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/fvh5Js4/PIGGY.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/3DX9Or6')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/x3fYHMC/QUEEN.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/40p3Vf7')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/DLzR4w6/Untitled.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/ezykasinodragonhatch')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/0QvZ9yD/Ezyyakuza.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/yakuzaezykasino777')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/c2hW9DF/BOOK.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/Ezykasinobook777')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/3FkpZVG/GANESHA.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/40p3Vf7')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/4M7pfy1/EZYAZTIC.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/aztecezykasino777')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/K05pFCL/MOUSE.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/4h7ovWV')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/FVNFhSk/QILIN.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/3DP3diD')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/BPWWyBY/Tiger.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/4j9Q97K')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/VBXrhgY/FORTUNE.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://bit.ly/4fVpGI2')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/KWL4CGb/AOO.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/Re21LsY0')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/Swh0k14/sss.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/me21BiEK')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+                <img src="https://i.ibb.co/P1Vvcw1/Srwd.webp" alt="Gambar 1">
+                <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+                <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/ke218opc')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+               <img src="https://i.ibb.co/251TL3F/GATES-SALJU.webp" alt="Gambar 1">
+               <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+               <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/Ne20T62G')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+               <img src="https://i.ibb.co/pQDV7bS/Gates-kakk.webp" alt="Gambar 1">
+               <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+               <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/Ve20U6t9')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+               <img src="https://i.ibb.co/yyFtLRs/Kakek-biasa.webp" alt="Gambar 1">
+               <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+               <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/Oe20PwzT')" class="btn-demo">Mainkan Demo</a>
+            </div>
+            <div class="box">
+              <img src="https://i.ibb.co/C2MvZ6M/CUCU-1000.webp" alt="Gambar 1">
+              <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+              <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/Me20ATkg')" class="btn-demo">Mainkan Demo</a>
+           </div>
+            <div class="box">
+             <img src="https://i.ibb.co/XL4rnFd/STAR.webp" alt="Gambar 1">
+             <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+             <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/Je20DD0X')" class="btn-demo">Mainkan Demo</a>
+           </div>
+            <div class="box">
+            <img src="https://i.ibb.co/LQdDcYt/STAR-MES.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/Ce20Gnvs')" class="btn-demo">Mainkan Demo</a>
+          </div>
+            <div class="box">
+            <img src="https://i.ibb.co/CbC8Q2F/PATCH.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/qe20ZNvS')" class="btn-demo">Mainkan Demo</a>
+          </div>
+          <div class="box">
+            <img src="https://i.ibb.co/Bs6wcry/Bonanza.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/Ie22JNHw')" class="btn-demo">Mainkan Demo</a>
+          </div>
+          <div class="box">
+            <img src="https://i.ibb.co/TLDy2v5/Swet1000.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/te22L6PL')" class="btn-demo">Mainkan Demo</a>
+          </div>
+          <div class="box">
+            <img src="https://i.ibb.co/4fKSMfn/swetmes.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/ae22XRz5')" class="btn-demo">Mainkan Demo</a>
+          </div>
+          <div class="box">
+            <img src="https://i.ibb.co/6WMMZp2/SUGAR.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/se22VRo3')" class="btn-demo">Mainkan Demo</a>
+          </div>
+          <div class="box">
+            <img src="https://i.ibb.co/7gF0qvr/SUGAR1000.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/4e22NyVD')" class="btn-demo">Mainkan Demo</a>
+          </div>
+          <div class="box">
+            <img src="https://i.ibb.co/6nfkGHB/athena.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/de2234g7')" class="btn-demo">Mainkan Demo</a>
+          </div>
+          <div class="box">
+            <img src="https://i.ibb.co/3WBhJ3K/ATHENA-1000.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/He226hHz')" class="btn-demo">Mainkan Demo</a>
+          </div>
+            <div class="box">
+            <img src="https://i.ibb.co/d5JJsjG/torosCQ9.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/Toros')" class="btn-demo">Mainkan Demo</a>
+          </div>
+            <div class="box">
+            <img src="https://i.ibb.co/TBs30m6/flower-fortune.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/FlowerfortuneCQ9')" class="btn-demo">Mainkan Demo</a>
+          </div>
+            <div class="box">
+            <img src="https://i.ibb.co/N2JpGDh/GUGUGU.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/Ne9mKacJ')" class="btn-demo">Mainkan Demo</a>
+          </div>
+            <div class="box">
+            <img src="https://i.ibb.co/mqz0Kbg/GU-GU-GU-2.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/pe9mLUTv')" class="btn-demo">Mainkan Demo</a>
+          </div>
+            <div class="box">
+            <img src="https://i.ibb.co/Tc8zT2j/GU-GU-GU-3.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/ke9mXYWJ')" class="btn-demo">Mainkan Demo</a>
+          </div>
+            <div class="box">
+            <img src="https://i.ibb.co/m5jSPS2/HERCULES.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/8e9mCX7e')" class="btn-demo">Mainkan Demo</a>
+          </div>
+            <div class="box">
+            <img src="https://i.ibb.co/wB7KsLY/RED-PHONEX.webp" alt="Gambar 1">
+            <a href="https://t.ly/Antiblockezykasino" target="_blank" class="btn-main">Mainkan sekarang</a>
+            <a href="javascript:void(0)" onclick="loadGame('https://cutt.ly/2e9mBPmW')" class="btn-demo">Mainkan Demo</a>
+          </div>
+            <!-- Repeat similar box structure for other games -->
+        </div>
+    </div>
+
+    <!-- The iframe for loading the main link -->
+    <iframe id="gameFrame"></iframe>
+    <button id="closeBtn" onclick="closeFullscreen()">Tutup</button>
+
+    <script>
+        // Function to open the game in fullscreen
+        function loadGame(url) {
+            var iframe = document.getElementById('gameFrame');
+            var closeBtn = document.getElementById('closeBtn');
+            iframe.src = url; // Set the iframe source to the provided URL
+            iframe.style.display = 'block'; // Show the iframe
+            closeBtn.style.display = 'block'; // Show the close button
+        }
+
+        // Function to exit fullscreen
+        function closeFullscreen() {
+            var iframe = document.getElementById('gameFrame');
+            var closeBtn = document.getElementById('closeBtn');
+            iframe.style.display = 'none'; // Hide the iframe
+            closeBtn.style.display = 'none'; // Hide the close button
+        }
+    </script>
+</body>
+</html>
