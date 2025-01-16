@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,84 +32,41 @@
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
     </script>
-        <style type="text/css">
-            @font-face {
+
+    <style type="text/css">
+        @font-face {
              font-family: "gilroy";
              src: url(FontsFree-Net-Gilroy-Heavy.ttf);
-            }
-       
-            .gilroy {
-             font-family: "gilroy";
-            }
-           </style>
+        }
 
-<link rel="icon" href="https://i.ibb.co/0D3x5RB/download.png" type="image/png">
-    <!-- Styling -->
-    <style>
-        /* Mengatur latar belakang dan konten */
+        .gilroy {
+             font-family: "gilroy";
+        }
+
         body {
-            
             text-align: center;
             margin-top: 80px;
             background-image: url('https://i.ibb.co/Yf7bhw5/BG-2k.webp');
-            background-size: cover;  /* Adjusted to cover the entire background */;
+            background-size: cover;
             background-position: top;
             background-repeat: no-repeat;
             background-color: #210d09;
             color: #333;
             overflow-x: hidden;
         }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 0.5rem;
-        }
 
-        main {
-            padding: 10px;
-        }
-
-        aside {
-            padding: 10px;
-            background-color: #f4f4f4;
-        }
-
-        footer {
-            background-color: #ddd;
-            text-align: center;
-            padding: 1rem;
-        }
-        
-        
-        @media (max-width: 600px) {
-            main, aside {
-                float: none;
-                width: auto;
-            }
-
-            nav, aside {
-                text-align: center;
-            }
-        }
-            @keyframes wiggle {
-    0%, 100% {
-        transform: rotate(-2deg);
-    }
-    50% {
-        transform: rotate(2deg);
-    }
-    }
         h1 {
-        font-size: 36px;
-        margin-top: 20px;
-        margin-bottom: 5px;
-        background: -webkit-linear-gradient(#fff449, #c8650e);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 0 0 10px #c8650e, 0 0 35px #c8650e; 
-        animation: wiggle 2s ease infinite;
-        font-family: "gilroy";
+            font-size: 36px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            background: -webkit-linear-gradient(#fff449, #c8650e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px #c8650e, 0 0 35px #c8650e; 
+            animation: wiggle 2s ease infinite;
+            font-family: "gilroy";
         }
+
         h2 {
             font-size: 28px;
             margin-top: 10px;
@@ -121,6 +76,7 @@
             text-shadow: 0px 2px 2px #000000;
             font-family: "gilroy";
         }
+
         p {
             font-size: 18px;
             margin-top: 10px;
@@ -128,7 +84,7 @@
             color: #ffffff;
             font-family: monospace;
         }
-        /* Button Styling */
+
         .button-container {
             display: flex;
             flex-direction: column;
@@ -136,6 +92,7 @@
             gap: 15px;
             font-family: "gilroy";
         }
+
         .button {
             background: -webkit-linear-gradient(#fff449, #c8650e);
             color: #6e470d;
@@ -148,12 +105,37 @@
             border-radius: 5px;
             cursor: pointer;
             width: 200px;
+            transition: transform 0.3s ease;
         }
+
         .button:hover {
             background-color: #e6a900;
             color: white;
+            transform: scale(1.1) rotate(3deg);
+            animation: bell-shake 0.5s ease;
         }
-        /* Efek Salju */
+
+        @keyframes wiggle {
+            0%, 100% {
+                transform: rotate(-2deg);
+            }
+            50% {
+                transform: rotate(2deg);
+            }
+        }
+
+        @keyframes bell-shake {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(3deg);
+            }
+            75% {
+                transform: rotate(-3deg);
+            }
+        }
+
         .snowflake {
             position: absolute;
             top: -10px;
@@ -162,6 +144,7 @@
             pointer-events: none;
             animation: fall linear infinite;
         }
+
         @keyframes fall {
             to {
                 transform: translateY(100vh);
@@ -178,7 +161,6 @@
     <div class="button-container" id="button-container"></div>
 
     <script defer>
-        // Membuat tombol baru
         const buttons = [
             { text: "MAINKAN DISINI", link: "https://10ezykasino.org/" },
             { text: "MAXWIN HARI INI", link: "https://cutt.ly/MaxwinEzykasino" },
@@ -188,7 +170,6 @@
 
         const buttonContainer = document.getElementById("button-container");
 
-        // Menambahkan tombol ke halaman
         buttons.forEach(button => {
             const a = document.createElement("a");
             a.textContent = button.text;
@@ -198,10 +179,9 @@
             buttonContainer.appendChild(a);
         });
 
-        // Efek Salju
         function createSnowflake() {
             const snowflake = document.createElement("div");
-            const size = Math.random() * 5 + 5; // Ukuran acak antara 5-10px
+            const size = Math.random() * 5 + 5;
             const position = Math.random() * window.innerWidth;
 
             snowflake.classList.add("snowflake");
@@ -218,26 +198,24 @@
             }, 5000);
         }
 
-        // Membuat salju setiap 100ms
         setInterval(createSnowflake, 100);
     </script>
-    <br>
-    <br>
-    <div class="footer">
-        <center><p>© EZYKASINO</p ></center>
-      </div>
- <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/676b823daf5bfec1dbe18a22/1iftv9gtl';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->   
+
+    <div class="footer">
+        <center><p>© EZYKASINO</p></center>
+    </div>
+
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/676b823daf5bfec1dbe18a22/1iftv9gtl';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
 </body>
 </html>
