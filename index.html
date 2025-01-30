@@ -56,13 +56,13 @@
     </section>
     
     <!-- Selamat Datang Section -->
-    <section class="text-center mt-4"> <!-- Mengurangi margin-top -->
-        <h2 class="text-4xl font-extrabold mb-4">Selamat Datang di Slot Online Ezykasino</h2>
+    <section class="text-center mt-0 mb-4"> <!-- Menghapus margin-top dan menambahkan margin-bottom kecil -->
+        <h2 class="text-4xl font-extrabold mb-2">Selamat Datang di Slot Online Ezykasino</h2>
         <p class="text-lg mb-6">Bergabunglah dengan ribuan pemain dan nikmati pengalaman bermain slot terbaik dengan bonus besar setiap hari!</p>
     </section>
 
     <!-- Hero Section -->
-    <main class="min-h-screen flex flex-col justify-center items-center text-center mt-0"> <!-- Mengurangi jarak dari slideshow -->
+    <main class="min-h-screen flex flex-col justify-center items-center text-center mt-0"> <!-- Mengurangi margin dari slideshow -->
         <div class="flex flex-col space-y-4 items-center">
             <a href="https://t.ly/Ezykasino777" class="w-48 px-6 py-3 bg-yellow-400 text-black font-bold rounded-lg shadow-md hover:bg-yellow-300 transition duration-200 transform hover:scale-105">MAINKAN DISINI</a>
             <a href="https://cutt.ly/MaxwinEzykasino" class="w-48 px-6 py-3 bg-yellow-400 text-black font-bold rounded-lg shadow-md hover:bg-yellow-300 transition duration-200 transform hover:scale-105">MAXWIN HARI INI</a>
@@ -76,15 +76,6 @@
         function showSlides() {
             let slides = document.getElementsByClassName("slides");
             for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 5000); // Change slide every 5 seconds
-        }
-        showSlides();
-    </script>
     
     <!-- Features Section -->
     <section id="features" class="bg-black bg-opacity-75 py-16">
