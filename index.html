@@ -11,6 +11,25 @@
             background: url('https://i.ibb.co/fvh0qyJ/360-F-502106325-A6-F1cc9-HAe3-Okc2-AGy-R22-YXIemg-HPqw-W.jpg') no-repeat center center fixed;
             background-size: cover;
         }
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .slides {
+            display: none;
+            width: 100%;
+        }
+        .fade {
+            animation: fadeEffect 2s infinite;
+        }
+        @keyframes fadeEffect {
+            from {opacity: 0.4;} 
+            to {opacity: 1;}
+        }
     </style>
 </head>
 <body class="text-white">
@@ -29,12 +48,10 @@
     
     <!-- Slideshow Section -->
     <section class="w-full max-w-4xl mx-auto mt-6">
-        <div class="relative w-full overflow-hidden rounded-lg shadow-lg">
-            <div class="flex animate-slideShow">
-                <img src="https://via.placeholder.com/800x400/FF5733/ffffff?text=Slide+1" class="w-full">
-                <img src="https://via.placeholder.com/800x400/33FF57/ffffff?text=Slide+2" class="w-full">
-                <img src="https://via.placeholder.com/800x400/3357FF/ffffff?text=Slide+3" class="w-full">
-            </div>
+        <div class="slideshow-container">
+            <img src="https://via.placeholder.com/800x400/FF5733/ffffff?text=Slide+1" class="slides fade">
+            <img src="https://via.placeholder.com/800x400/33FF57/ffffff?text=Slide+2" class="slides fade">
+            <img src="https://via.placeholder.com/800x400/3357FF/ffffff?text=Slide+3" class="slides fade">
         </div>
     </section>
     
@@ -49,6 +66,21 @@
             <a href="https://adelia0915.github.io/Demogame/" class="w-48 px-6 py-3 bg-yellow-400 text-black font-bold rounded-lg shadow-md hover:bg-yellow-300 transition duration-200 transform hover:scale-105">GAME DEMO</a>
         </div>
     </main>
+
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        }
+        showSlides();
+    </script>
     
     <!-- Features Section -->
     <section id="features" class="bg-black bg-opacity-75 py-16">
