@@ -63,28 +63,34 @@
 
     <!-- Hero Section -->
     <main class="min-h-screen flex flex-col justify-center items-center text-center mt-0"> <!-- Mengurangi margin dari slideshow -->
-        <div class="flex flex-col space-y-4 items-center">
+    <div class="w-full flex justify-between max-w-4xl px-4">
+        <!-- Kolom Kiri -->
+        <div class="flex flex-col space-y-4 items-center w-1/2">
             <a href="https://t.ly/Ezykasino777" class="w-48 px-6 py-3 bg-yellow-400 text-black font-bold rounded-lg shadow-md hover:bg-yellow-300 transition duration-200 transform hover:scale-105">MAINKAN DISINI</a>
             <a href="https://cutt.ly/MaxwinEzykasino" class="w-48 px-6 py-3 bg-yellow-400 text-black font-bold rounded-lg shadow-md hover:bg-yellow-300 transition duration-200 transform hover:scale-105">MAXWIN HARI INI</a>
+        </div>
+        <!-- Kolom Kanan -->
+        <div class="flex flex-col space-y-4 items-center w-1/2">
             <a href="https://cutt.ly/membervip777" class="w-48 px-6 py-3 bg-yellow-400 text-black font-bold rounded-lg shadow-md hover:bg-yellow-300 transition duration-200 transform hover:scale-105">MEMBER VIP</a>
             <a href="https://adelia0915.github.io/Demogame/" class="w-48 px-6 py-3 bg-yellow-400 text-black font-bold rounded-lg shadow-md hover:bg-yellow-300 transition duration-200 transform hover:scale-105">GAME DEMO</a>
         </div>
-    </main>
+    </div>
+</main>
 
-    <script>
-        let slideIndex = 0;
-        function showSlides() {
-            let slides = document.getElementsByClassName("slides");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 5000); // Change slide every 5 seconds
+<script>
+    let slideIndex = 0;
+    function showSlides() {
+        let slides = document.getElementsByClassName("slides");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
         }
-        showSlides();
-    </script>
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change slide every 5 seconds
+    }
+    showSlides();
+</script>
     
     <!-- Features Section -->
     <section id="features" class="bg-black bg-opacity-75 py-16">
